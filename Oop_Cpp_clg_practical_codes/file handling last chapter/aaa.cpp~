@@ -1,0 +1,64 @@
+#include<iostream>
+#include<bits/stdc++.h>
+
+using namespace std;
+
+class Account
+
+{
+	 int acc_no;
+	 float balance;
+
+	public:
+
+	 void input()
+	 {
+		 cout << " Enter account no : "<<endl;
+		 cin >> acc_no;
+		 cout << " Enter balance amount : " <<endl;
+		 cin >> balance;
+
+
+	 }
+
+	 void output()
+
+	{
+		cout << " Account No : "<<acc_no<<endl;
+		cout << " Balance Amount  : "<<balance << endl;
+
+	}
+
+
+
+
+
+};
+
+
+
+int main()
+{
+	Account a[5], *p[5];
+	p[5] = &a[5];
+	
+	int i;
+	 
+	for( i = 0 ; i < 5 ; i++)
+{
+	p[i]->input();
+}
+
+
+	for ( i = 0; i < 5 ; i++ )
+
+{
+	p[i]->output();
+}
+
+return 0;
+
+}
+
+
+
